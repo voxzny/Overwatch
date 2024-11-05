@@ -3,25 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overwatch Guide</title>
     <link rel="stylesheet" href="style.css">
+    <title>Overwatch 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+       
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="banner">
-            <a href="Tank.html">
-            <img src="Charactors/1600_Mauga.jpg" alt="">
-            </a>
-            <div class="text"><img src="Charactors/TankIcon.webp" alt="">Tank</div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
         </div>
-        <div class="banner">
-            <img src="Charactors/1600_Reaper.jpg" alt="">
-            <div class="text"><img src="Charactors/OffenseIcon.webp" alt="">Damage</div>
-        </div>
-        <div class="banner">
-            <img src="Charactors/1600_Kiriko.jpg" alt="">
-            <div class="text"><img src="Charactors/SupportIcon.webp" alt="">Support</div>
-        </div>
+        <button class="view-all-btn" onclick="toggleFlexbox()">View All</button>
     </div>
+
+    <!-- Flexbox layout that will appear on button click -->
+<div class=" scrollable-container" id="scrollable-container" >
+<div class="flex-container">
+<div class="flex-item"><a href="Ashe.html"><img src="Damage/Ashe.png" alt="Ashe"></a></div>
+<div class="flex-item"><a href="Bastion.html"><img src="Damage/Bastion.png" alt="Bastion"></a></div>
+<div class="flex-item"><a href="Cassidy.html"><img src="Damage/Cassidy.png" alt="Cassidy"></a></div>
+<div class="flex-item"><a href="Echo.html"><img src="Damage/Echo.png" alt="Echo"></a></div>
+<div class="flex-item"><a href="Genji.html"><img src="Damage/Genji.png" alt="Genji"></a></div>
+<div class="flex-item"><a href="Hanzo.html"><img src="Damage/Hanzo.png" alt="Hanzo"></a></div>
+<div class="flex-item"><a href="Junkrat.html"><img src="Damage/Junkrat.png" alt="Junkrat"></a></div>
+<div class="flex-item"><a href="Mei.html"><img src="Damage/Mei.png" alt="Mei"></a></div>
+<div class="flex-item"><a href="Pharah.html"><img src="Damage/Pharah.png" alt="Pharah"></a></div>
+<div class="flex-item"><a href="Reaper.html"><img src="Damage/Reaper.png" alt="Reaper"></a></div>
+<div class="flex-item"><a href="Sojourn.html"><img src="Damage/Sojourn.png" alt="Sojourn"></a></div>
+<div class="flex-item"><a href="Soldier76.html"><img src="Damage/Soldier 76.png" alt="Soldier 76"></a></div>
+<div class="flex-item"><a href="Sombra.html"><img src="Damage/Sombra.png" alt="Sombra"></a></div>
+<div class="flex-item"><a href="Symmetra.html"><img src="Damage/Symmetra.png" alt="Symmetra"></a></div>
+<div class="flex-item"><a href="Torbjorn.html"><img src="Damage/Torbjörn.png" alt="Torbjörn"></a></div>
+<div class="flex-item"><a href="Tracer.html"><img src="Damage/Tracer.png" alt="Tracer"></a></div>
+<div class="flex-item"><a href="Venture.html"><img src="Damage/Venture.png" alt="Venture"></a></div>
+<div class="flex-item"><a href="Widowmaker.html"><img src="Damage/Widowmaker.png" alt="Widowmaker"></a></div>
+<div class="flex-item"><a href="Ana.html"><img src="Support/Ana.png" alt="Ana"></a></div>
+<div class="flex-item"><a href="Baptiste.html"><img src="Support/Baptiste.png" alt="Baptiste"></a></div>
+<div class="flex-item"><a href="Brigitte.html"><img src="Support/Brigitte.png" alt="Brigitte"></a></div>
+<div class="flex-item"><a href="Illari.html"><img src="Support/Illari.png" alt="Illari"></a></div>
+<div class="flex-item"><a href="Kiriko.html"><img src="Support/Kiriko.png" alt="Kiriko"></a></div>
+<div class="flex-item"><a href="Lifeweaver.html"><img src="Support/Lifeweaver.png" alt="Lifeweaver"></a></div>
+<div class="flex-item"><a href="Lucio.html"><img src="Support/Lucio.png" alt="Lúcio"></a></div>
+<div class="flex-item"><a href="Mercy.html"><img src="Support/Mercy.png" alt="Mercy"></a></div>
+<div class="flex-item"><a href="Moira.html"><img src="Support/Moira.png" alt="Moira"></a></div>
+<div class="flex-item"><a href="Zenyatta.html"><img src="Support/Zenyatta.png" alt="Zenyatta"></a></div>
+<div class="flex-item"><a href="Dva.html"><img src="Tanks/D.va.png" alt="D.va"></a></div>
+<div class="flex-item"><a href="Doomfist.html"><img src="Tanks/Doomfist.png" alt="Doomfist"></a></div>
+<div class="flex-item"><a href="JunkerQueen.html"><img src="Tanks/JunkerQueen .png" alt="Junker Queen"></a></div>
+<div class="flex-item"><a href="Mauga.html"><img src="Tanks/Mauga.png" alt="Mauga"></a></div>
+<div class="flex-item"><a href="Orisa.html"><img src="Tanks/orisa.png" alt="Orisa"></a></div>
+<div class="flex-item"><a href="Ramattra.html"><img src="Tanks/Ramattra.png" alt="Ramattra"></a></div>
+<div class="flex-item"><a href="Reinhardt.html"><img src="Tanks/Reinhardt.png" alt="Reinhardt"></a></div>
+<div class="flex-item"><a href="Roadhog.html"><img src="Tanks/Roadhog.png" alt="Roadhog"></a></div>
+<div class="flex-item"><a href="Sigma.html"><img src="Tanks/Sigma.png" alt="Sigma"></a></div>
+<div class="flex-item"><a href="Winston.html"><img src="Tanks/winston.png" alt="Winston"></a></div>
+<div class="flex-item"><a href="WreckingBall.html"><img src="Tanks/wreaking ball.png" alt="Wrecking Ball"></a></div>
+<div class="flex-item"><a href="Zarya.html"><img src="Tanks/Zarya.png" alt="Zarya"></a></div>
+</div>
+
+
+
+
+    </div>
+
+    <!-- Include FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- JavaScript to toggle the flexbox -->
+    <script>
+         function toggleFlexbox() {
+            var scrollableContainer = document.getElementById('scrollable-container');
+            var button = document.querySelector('.view-all-btn');
+            if (scrollableContainer.style.display === 'block') {
+                scrollableContainer.style.display = 'none';
+                button.textContent = 'View All';
+            } else {
+                scrollableContainer.style.display = 'block';
+                button.textContent = 'Hide All';
+            }
+        }
+    </script>
 </body>
 </html>
