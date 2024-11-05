@@ -77,7 +77,7 @@ body {
 }
 
 .flex-item {
-    background-color: #007bff;
+    background-color: #041e3ad0;
     color: white;
     margin: 10px;
     padding: 20px;
@@ -97,4 +97,19 @@ body {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        width: 90%;
+    }
+    .flex-item {
+        width: calc(50% - 20px); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-item {
+        width: 100%; /* Full-width for very small screens */
+    }
 }
